@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/ecommerce-product-page-main
 .pnp.js
 
 # testing
