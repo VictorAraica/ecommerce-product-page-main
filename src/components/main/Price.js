@@ -4,17 +4,17 @@ import {
   PriceTopStyled,
   CurrentPriceStyled,
   DiscountStyled,
-  OldPriceStyled
+  OldPriceStyled,
 } from "./styles/PriceStyled";
 
-export default function Price() {
+export default function Price({ price, discount, oldPrice }) {
   return (
     <PriceContainerStyled>
       <PriceTopStyled>
-        <CurrentPriceStyled>$125.00</CurrentPriceStyled>
-        <DiscountStyled>50%</DiscountStyled>
+        <CurrentPriceStyled>{price}</CurrentPriceStyled>
+        {discount ? <DiscountStyled>{discount}</DiscountStyled> : ""}
       </PriceTopStyled>
-      <OldPriceStyled>$250.00</OldPriceStyled>
+      {oldPrice ? <OldPriceStyled>{oldPrice}</OldPriceStyled> : ""}
     </PriceContainerStyled>
   );
 }

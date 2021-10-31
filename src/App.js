@@ -2,7 +2,8 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
+
+import useCart from "./components/hooks/useCart";
 
 import image1 from "./images/image-product-1.jpg";
 import thumbnail1 from "./images/image-product-1-thumbnail.jpg";
@@ -17,7 +18,7 @@ import image4 from "./images/image-product-4.jpg";
 import thumbnail4 from "./images/image-product-4-thumbnail.jpg";
 
 function App() {
-  const [cart, setCart] = useState();
+  const [cart, addToCart, removeFromCart] = useCart();
 
   const images = [
     { image: image1, thumbnail: thumbnail1 },
@@ -26,17 +27,22 @@ function App() {
     { image: image4, thumbnail: thumbnail4 },
   ];
 
-  const product = { 
-    images: images
-    
-  
+  const product = {
+    images: images,
+    company: "SNEAKER COMPANY",
+    title: "Fall Limited Edition Sneakers",
+    description:
+      "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
+    price: "$125.00",
+    discount: "50%",
+    oldPrice: "$250.00",
   };
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Header />
-        <Main />
+        <Header cart={cart} removeFromCart={removeFromCart} />
+        <Main product={product} addToCart={addToCart} />
       </ThemeProvider>
     </div>
   );

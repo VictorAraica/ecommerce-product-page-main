@@ -9,18 +9,18 @@ import AddToCart from "./AddToCart";
 
 import Price from "./Price";
 
-export default function Description() {
+export default function Description({ product, addToCart }) {
   return (
     <DescriptionContainerstyled>
-      <CompanyTitleStyled>SNEAKER COMPANY</CompanyTitleStyled>
-      <TitleStyled>Fall Limited Edition Sneakers</TitleStyled>
-      <InfoStyled>
-        These low-profile sneakers are your perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withstand everything the
-        weather can offer.
-      </InfoStyled>
-      <Price />
-      <AddToCart />
+      <CompanyTitleStyled>{product.company}</CompanyTitleStyled>
+      <TitleStyled>{product.title}</TitleStyled>
+      <InfoStyled>{product.description}</InfoStyled>
+      <Price
+        price={product.price}
+        discount={product.discount}
+        oldPrice={product.oldPrice}
+      />
+      <AddToCart product={product} addToCart={addToCart} />
     </DescriptionContainerstyled>
   );
 }

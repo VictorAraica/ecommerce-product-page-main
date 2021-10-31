@@ -9,7 +9,7 @@ import Nav from "./Nav";
 import Cart from "./Cart";
 import Profile from "./Profile";
 
-export default function Header() {
+export default function Header({ cart, removeFromCart }) {
   return (
     <HeaderStyled>
       <LeftHeaderStyled>
