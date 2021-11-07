@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const ContainerStyled = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 4fr;
+  grid-template-columns: 3fr 4fr;
   margin-top: 2rem;
   justify-content: start;
   align-items: center;
 `;
 
 export const AmountButtonStyled = styled.button`
-  background-color: white;
+  background-color: transparent;
   color: ${({ theme }) => theme.colors.orange};
   border: none;
   display: flex;
@@ -45,4 +45,15 @@ export const AddToCartButtonStyled = styled.button`
   &:hover {
     opacity: 0.6;
   }
+`;
+
+export const AmountButtonsContainer = styled.div`
+  display: flex;
+  background-color: ${({ theme }) => theme.colors.lightGrayishBlue};
+  justify-content: space-around;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  padding: 0.5rem 0;
+  border-radius: 0.6rem;
 `;

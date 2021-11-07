@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function useCart() {
-  const [cart, setCart] = useState([]);
+export default function useCart(initial) {
+  const [cart, setCart] = useState(initial);
 
   const addToCart = (product) => {
     let newCart = [];

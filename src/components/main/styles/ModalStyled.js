@@ -10,7 +10,7 @@ export const ModalContainerStyled = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 `;
 
 export const ButtonStyled = styled.button`
@@ -28,7 +28,6 @@ export const ButtonStyled = styled.button`
   height: 3rem;
   border-radius: 100%;
   cursor: pointer;
-  
 `;
 
 export const ImageContainerStyled = styled.div`

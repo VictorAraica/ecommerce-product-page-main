@@ -18,8 +18,6 @@ import image4 from "./images/image-product-4.jpg";
 import thumbnail4 from "./images/image-product-4-thumbnail.jpg";
 
 function App() {
-  const [cart, addToCart, removeFromCart] = useCart();
-
   const images = [
     { image: image1, thumbnail: thumbnail1 },
     { image: image2, thumbnail: thumbnail2 },
@@ -33,15 +31,16 @@ function App() {
     title: "Fall Limited Edition Sneakers",
     description:
       "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
-    price: "$125.00",
-    discount: "50%",
-    oldPrice: "$250.00",
+    price: 125.0,
+    discount: 50,
+    oldPrice: 250.0,
   };
+  const [cart, addToCart, removeFromCart] = useCart([]);
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Header cart={cart} removeFromCart={removeFromCart} />
+        <Header cart={cart} removeFromCart={removeFromCart} product={product} />
         <Main product={product} addToCart={addToCart} />
       </ThemeProvider>
     </div>

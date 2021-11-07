@@ -18,7 +18,7 @@ export default function Header({ cart, removeFromCart }) {
       </LeftHeaderStyled>
 
       <RightHeaderStyled>
-        <Cart />
+        <Cart cart={cart} removeFromCart={removeFromCart} />
         <Profile />
       </RightHeaderStyled>
     </HeaderStyled>

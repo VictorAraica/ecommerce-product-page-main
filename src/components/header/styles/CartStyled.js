@@ -4,12 +4,31 @@ export const CartStyled = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  color: ${({ theme }) => theme.colors.darkGrayishBlue};
+  color: ${({ theme, cartPopUp }) =>
+    cartPopUp ? theme.colors.veryVarkBlue : theme.colors.darkGrayishBlue};
   display: flex;
   align-items: center;
   margin: 0rem 2rem;
+  position: relative;
 
   &:hover {
     color: ${({ theme }) => theme.colors.veryVarkBlue};
+  }
+
+  &:after {
+    content: "${({ amount }) => amount}";
+    font-size: 0.7rem;
+
+    background-color: ${({ theme }) => theme.colors.orange};
+    color: white;
+
+    position: absolute;
+    top: -0.2rem;
+    right: 0;
+
+    padding: 0 0.4rem;
+    border-radius: 0.5rem;
+
+    display: ${({ amount }) => (amount > 0 ? "block" : "none")};
   }
 `;

@@ -11,10 +11,10 @@ export default function Price({ price, discount, oldPrice }) {
   return (
     <PriceContainerStyled>
       <PriceTopStyled>
-        <CurrentPriceStyled>{price}</CurrentPriceStyled>
-        {discount ? <DiscountStyled>{discount}</DiscountStyled> : ""}
+        <CurrentPriceStyled>${price.toFixed(2)}</CurrentPriceStyled>
+        {discount ? <DiscountStyled>{discount}%</DiscountStyled> : ""}
       </PriceTopStyled>
-      {oldPrice ? <OldPriceStyled>{oldPrice}</OldPriceStyled> : ""}
+      {oldPrice ? <OldPriceStyled>${oldPrice.toFixed(2)}</OldPriceStyled> : ""}
     </PriceContainerStyled>
   );
 }
