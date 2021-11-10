@@ -4,6 +4,11 @@ export const PriceContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+
+  @media (max-width: 490px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const PriceTopStyled = styled.div`

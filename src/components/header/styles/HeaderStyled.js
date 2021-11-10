@@ -12,14 +12,10 @@ export const HeaderStyled = styled.header`
   border-bottom: solid 1px ${({ theme }) => theme.colors.grayishBlue};
 `;
 
-export const LeftHeaderStyled = styled.header`
+export const LeftHeaderStyled = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
 `;
 
-export const RightHeaderStyled = styled.header`
-  height: 100%;
-  display: flex;
-  align-items: center;
-`;
+export const RightHeaderStyled = LeftHeaderStyled;

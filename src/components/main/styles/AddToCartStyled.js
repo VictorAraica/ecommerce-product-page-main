@@ -6,6 +6,12 @@ export const ContainerStyled = styled.div`
   margin-top: 2rem;
   justify-content: start;
   align-items: center;
+
+  @media (max-width: 490px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
 `;
 
 export const AmountButtonStyled = styled.button`

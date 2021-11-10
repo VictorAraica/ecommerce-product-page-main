@@ -1,8 +1,8 @@
 import React from "react";
-import { ButtonStyled } from "./styles/ModalStyled";
+import { ImagesButtonStyled } from "./styles/ImagesStyled";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
-export default function ModalButton({ right, index, setIndex }) {
+export default function ImagesButton({ right, index, setIndex, inModal }) {
   const style = { fontSize: "1.7em" };
 
   const onClick = () => {
@@ -14,12 +14,12 @@ export default function ModalButton({ right, index, setIndex }) {
   };
 
   return (
-    <ButtonStyled right={right} onClick={onClick}>
+    <ImagesButtonStyled right={right} onClick={onClick} inModal={inModal}>
       {right ? (
         <HiChevronRight style={style} />
       ) : (
         <HiChevronLeft style={style} />
       )}
-    </ButtonStyled>
+    </ImagesButtonStyled>
   );
 }

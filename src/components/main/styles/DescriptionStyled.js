@@ -6,6 +6,11 @@ export const DescriptionContainerstyled = styled.div`
   justify-content: center;
   padding: 0 10%;
   max-width: 700px;
+  margin: auto;
+
+  @media (max-width: 890px) {
+    margin-top: 3rem;
+  }
 `;
 
 export const CompanyTitleStyled = styled.h2`

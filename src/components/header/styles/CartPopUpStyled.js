@@ -10,6 +10,8 @@ export const CartPopUpContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
 
+  z-index: 10;
+
   background-color: white;
   box-shadow: 0px 10px 25px -2px rgba(0, 0, 0, 0.3);
   border-radius: 0.6rem;

@@ -6,7 +6,7 @@ import {
 import React from "react";
 import { ImageStyled } from "./styles/ImagesStyled";
 import Thumbnails from "./Thumbnails";
-import ModalButton from "./ModalButton";
+import ImagesButton from "./ImagesButton";
 
 export default function Modal({ images, index, setIndex, setModal }) {
   return (
@@ -14,11 +14,15 @@ export default function Modal({ images, index, setIndex, setModal }) {
       id="modal"
       onClick={(e) => setModal(!(e.target.id === "modal"))}
     >
-      
       <ImagesContainerStyled>
         <ImageContainerStyled>
           {index > 0 ? (
-            <ModalButton right={false} index={index} setIndex={setIndex} />
+            <ImagesButton
+              right={false}
+              index={index}
+              setIndex={setIndex}
+              inModal={true}
+            />
           ) : (
             ""
           )}
@@ -26,7 +30,12 @@ export default function Modal({ images, index, setIndex, setModal }) {
           <ImageStyled src={images[index].image} alt="hola" />
 
           {index < images.length - 1 ? (
-            <ModalButton right={true} index={index} setIndex={setIndex} />
+            <ImagesButton
+              right={true}
+              index={index}
+              setIndex={setIndex}
+              inModal={true}
+            />
           ) : (
             ""
           )}

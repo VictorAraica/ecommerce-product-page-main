@@ -4,6 +4,9 @@ export const ThumbnailsContainerStyled = styled.div`
   display: flex;
   margin-top: 1.5rem;
   gap: 3%;
+  @media (max-width: 890px) {
+    display: none;
+  }
 `;
 
 export const ThumbnailContainerStyled = styled.div`

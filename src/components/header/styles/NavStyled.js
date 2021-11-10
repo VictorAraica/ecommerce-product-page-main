@@ -4,6 +4,23 @@ export const NavContainerStyled = styled.nav`
   display: flex;
   height: 100%;
   align-items: center;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+`;
+
+export const BurguerButtonContainerStyled = styled.nav`
+  margin: 0rem 0.5rem;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.darkGrayishBlue};
+
+  @media (min-width: 961px) {
+    display: none;
+  }
 `;
 
 export const NavLinkStyled = styled.a`

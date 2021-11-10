@@ -13,23 +13,6 @@ export const ModalContainerStyled = styled.div`
   background-color: rgba(0, 0, 0, 0.75);
 `;
 
-export const ButtonStyled = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: ${({ right }) =>
-    right ? "translate(50%, -50%)" : "translate(-50%, -50%)"};
-  right: ${({ right }) => (right ? 0 : "")};
-  background-color: white;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100%;
-  cursor: pointer;
-`;
-
 export const ImageContainerStyled = styled.div`
   position: relative;
 `;
