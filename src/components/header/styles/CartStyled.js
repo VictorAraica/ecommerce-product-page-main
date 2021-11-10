@@ -11,6 +11,14 @@ export const CartStyled = styled.button`
   margin: 0rem 2rem;
   position: relative;
 
+  @media (max-width: 800px) {
+    margin: 0rem 1rem;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0rem 0.5rem;
+  }
+
   &:hover {
     color: ${({ theme }) => theme.colors.veryVarkBlue};
   }
