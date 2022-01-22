@@ -16,7 +16,7 @@ export const PriceTopStyled = styled.div`
   align-items: center;
 `;
 
-export const CurrentPriceStyled = styled.h3`
+export const CurrentPriceStyled = styled.h2`
   color: ${({ theme }) => theme.colors.veryVarkBlue};
   font-size: 1.5rem;
   font-weight: 700;
