@@ -4,7 +4,7 @@ export const HeaderStyled = styled.header`
   width: 90%;
   height: 7rem;
   position: relative;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: auto;
   display: flex;
   align-items: center;

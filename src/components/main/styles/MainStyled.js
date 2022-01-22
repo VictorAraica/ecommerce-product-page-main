@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainStyled = styled.main`
   width: 80%;
-  max-width: 1400px;
+  max-width: 1300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4rem auto;

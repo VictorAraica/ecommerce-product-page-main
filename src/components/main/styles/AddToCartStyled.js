@@ -21,8 +21,8 @@ export const AmountButtonStyled = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   padding: 0.5rem;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.65;
@@ -30,7 +30,7 @@ export const AmountButtonStyled = styled.button`
 `;
 
 export const AmountStyled = styled.h4`
-  font-weight: 900;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,14 +38,15 @@ export const AmountStyled = styled.h4`
 
 export const AddToCartButtonStyled = styled.button`
   background-color: ${({ theme }) => theme.colors.orange};
+  box-shadow: 0 25px 50px -20px ${({ theme }) => theme.colors.orange};
   border: none;
-  padding: 1rem 0.8rem;
+  padding: 1.1rem 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   border-radius: 0.7rem;
-  font-weight: 900;
+  font-weight: 700;
   cursor: pointer;
 
   &:hover {

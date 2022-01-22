@@ -24,7 +24,7 @@ export const TitleStyled = styled.h1`
   color: ${({ theme }) => theme.colors.veryVarkBlue};
   font-size: 3.5rem;
   line-height: 3.6rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 2rem;
 `;
 

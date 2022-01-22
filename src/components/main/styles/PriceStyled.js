@@ -19,15 +19,15 @@ export const PriceTopStyled = styled.div`
 export const CurrentPriceStyled = styled.h3`
   color: ${({ theme }) => theme.colors.veryVarkBlue};
   font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: 700;
   margin-right: 1rem;
 `;
 
 export const DiscountStyled = styled.p`
   color: ${({ theme }) => theme.colors.orange};
   background-color: ${({ theme }) => theme.colors.paleOrange};
-  font-size: 0.8rem;
-  font-weight: 900;
+  font-size: 0.9rem;
+  font-weight: 600;
   border-radius: 0.3rem;
   padding: 0.2rem 0.3rem;
 `;
@@ -37,4 +37,5 @@ export const OldPriceStyled = styled.p`
   color: ${({ theme }) => theme.colors.grayishBlue};
   text-decoration: line-through;
   font-size: 0.95rem;
+  font-weight: 600;
 `;
