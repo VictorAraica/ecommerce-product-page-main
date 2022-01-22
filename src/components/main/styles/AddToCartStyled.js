@@ -29,7 +29,7 @@ export const AmountButtonStyled = styled.a`
   }
 `;
 
-export const AmountStyled = styled.h4`
+export const AmountStyled = styled.h3`
   font-weight: 700;
   display: flex;
   align-items: center;
