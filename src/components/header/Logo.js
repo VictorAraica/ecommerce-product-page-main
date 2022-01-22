@@ -5,7 +5,7 @@ import { LogoStyled, LogoContainerStyled } from "./styles/LogoStyled";
 export default function Logo() {
   return (
     <LogoContainerStyled>
-      <LogoStyled src={LogoIcon} />
+      <LogoStyled src={LogoIcon} alt="Sneakers logo" />
     </LogoContainerStyled>
   );
 }
