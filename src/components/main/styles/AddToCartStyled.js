@@ -14,7 +14,7 @@ export const ContainerStyled = styled.div`
   }
 `;
 
-export const AmountButtonStyled = styled.button`
+export const AmountButtonStyled = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.colors.orange};
   border: none;

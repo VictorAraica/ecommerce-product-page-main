@@ -23,7 +23,7 @@ export const RelativeDiv = styled.div`
   margin: auto;
 `;
 
-export const ImagesButtonStyled = styled.button`
+export const ImagesButtonStyled = styled.a`
   position: absolute;
   top: 50%;
   transform: ${({ right }) =>

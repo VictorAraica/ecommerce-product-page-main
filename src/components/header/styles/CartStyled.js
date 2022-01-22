@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CartStyled = styled.button`
+export const CartStyled = styled.a`
   background: transparent;
   border: none;
   cursor: pointer;
