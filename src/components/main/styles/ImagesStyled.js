@@ -31,15 +31,14 @@ export const ImagesButtonStyled = styled.a`
   right: ${({ right }) => (right ? 0 : "")};
   background-color: white;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
   cursor: pointer;
 
-  display: ${({ inModal }) => (inModal ? "block" : "none")};
+  display: ${({ inModal }) => (inModal ? "flex" : "none")};
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 890px) {
     transform: ${({ right }) =>
